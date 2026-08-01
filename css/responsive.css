@@ -109,8 +109,30 @@
     }
 
     /* ======== Programs Section ======== */
-        .program-grid{
+    .program-grid{
         grid-template-columns:repeat(2,1fr);
+    }
+
+    /* ======== About Section ======== */
+    .about-image{
+        height: 380px;
+    }
+
+    .about-features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .mission-vision{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-btn{
+        display:flex;
+        justify-content:left;
+    }
+
+    .about-btn .btn{
+        width:300px;
     }
 }
 
@@ -169,7 +191,6 @@
         margin-bottom: 1.5rem;
         
         font-size: var(--fs-h2);
-        /* font-size: clamp(2.5rem, 4vw, 3.5rem); */
         line-height: 1.2;
     }
 
@@ -231,10 +252,25 @@
         bottom:12%;
     }
 
-
+    /* ======== Programs Section ======== */
     .program-grid{
         max-width: 1050px;
         margin-inline:auto;
+    }
+
+    /* ======== About Section ======== */
+    .about-card{
+        display:grid;
+        grid-template-columns:45% 55%;
+        align-items:center;
+    }
+
+    .about-image{
+        height:100%;
+    }
+
+    .about-content{
+        padding:3rem;
     }
 }
 
@@ -309,10 +345,16 @@
         padding:1rem 1.2rem;
     }
 
+    /* ======== Programs Section ======== */
     .program-grid{
         padding: .8rem;
         max-width: none;
         grid-template-columns:repeat(4,1fr);
         gap:1.5rem;
+    }
+
+    /* ======== About Section ======== */
+     .about-content{
+        padding:2rem;
     }
 }
