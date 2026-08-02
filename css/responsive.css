@@ -134,8 +134,20 @@
     .about-btn .btn{
         width:300px;
     }
-}
 
+    /* ====== WHY CHOOSE US ====== */
+     .why-grid{
+        margin-inline:auto;
+        grid-template-columns:1fr;
+        gap:2rem;
+    }
+
+    .why-card{
+        padding:2.5rem 2rem;
+        aspect-ratio:9/4;
+    }
+
+}
 
 /* ==========================================
    DESKTOPS (1024px and above)
@@ -272,6 +284,16 @@
     .about-content{
         padding:3rem;
     }
+
+    .why-grid{
+        max-width: 1050px;
+        margin-inline:auto;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-card{
+        aspect-ratio:6/4;
+    }
 }
 
 
@@ -356,5 +378,11 @@
     /* ======== About Section ======== */
      .about-content{
         padding:2rem;
+    }
+
+    .why-grid{
+        max-width: none;
+        margin-inline:none;
+        grid-template-columns:repeat(3,1fr);
     }
 }
