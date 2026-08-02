@@ -918,3 +918,102 @@ p{
     line-height:1.8;
     font-weight:500;
 }
+
+/* ==========================================
+   ADMISSIONS
+========================================== */
+
+.admissions{
+    padding:var(--section-padding);
+    background:var(--bg-secondary);
+}
+
+.admission-grid{
+    display:grid;
+    gap:2rem;
+}
+
+/* Hide arrows on mobile */
+.step-arrow{
+    display:none;
+}
+
+.admission-card{
+    position:relative;
+    background:var(--surface-color);
+    padding:2rem 1.5rem;
+    border-radius:var(--image-radius);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    transition:var(--transition);
+    text-align:center;
+}
+
+.admission-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:var(--color-secondary);
+}
+
+.admission-card:hover{
+    transform:translateY(-8px);
+}
+
+.step-number{
+    position:absolute;
+    top:15px;
+    right:20px;
+
+    font-size:3rem;
+    font-weight:700;
+
+    color:var(--color-primary);
+
+    opacity:.35;
+
+    pointer-events:none;
+}
+
+.step-icon{
+    width:75px;
+    height:75px;
+
+    margin:0 auto 1.5rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+    color:var(--text-light);
+
+    font-size:1.8rem;
+
+    transition:var(--transition);
+}
+
+.admission-card:hover .step-icon{
+    background:var(--color-secondary);
+    color:var(--color-primary);
+
+    transform:rotate(10deg);
+}
+
+.admission-card h3{
+    font-size:var(--fs-h4);
+    color:var(--text-primary);
+    margin-bottom:1rem;
+}
+
+.admission-card p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}

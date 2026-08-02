@@ -147,6 +147,17 @@
         aspect-ratio:9/4;
     }
 
+    /* ====== ADMISSIONS ====== */
+
+    .admission-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:2rem;
+    }
+
+    .admission-card{
+        padding:2.5rem 2rem;
+    }
+
 }
 
 /* ==========================================
@@ -294,6 +305,14 @@
     .why-card{
         aspect-ratio:6/4;
     }
+
+
+    .admission-grid{
+        max-width: 1050px;
+        margin-inline:auto;
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
 
@@ -384,5 +403,11 @@
         max-width: none;
         margin-inline:none;
         grid-template-columns:repeat(3,1fr);
+    }
+
+    .admission-grid{
+        max-width: none;
+        margin-inline:none;
+        grid-template-columns:repeat(4,1fr);
     }
 }
