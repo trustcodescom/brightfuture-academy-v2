@@ -24,7 +24,7 @@
     <!-- ==========================================
          Favicon
     =========================================== -->
-    <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg">
+    <link rel="icon" type="image/png" href="./images/logo/BrightFuture_logo.png">
 
     <!-- ==========================================
          Google Fonts
@@ -46,6 +46,7 @@
          CSS Files
     =========================================== -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
@@ -64,11 +65,11 @@
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <!-- CTA Button -->
-                <a href="#" class="header-cta-btn">Apply Now</a>
+                <a href="#admissions" class="header-cta-btn">Apply Now</a>
 
                 <!-- Mobile Menu Button -->
                 <button class="menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
@@ -99,11 +100,11 @@
                         to discover their full potential.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-primary open-application">
                             Enroll Now
                         </a>
-                        <a href="#about" class="btn btn-outline">
-                            Explore School
+                        <a href="#programs" class="btn btn-outline">
+                            Explore Programs
                         </a>
                     </div>
 
@@ -172,7 +173,7 @@
                             A warm and caring start where little ones
                             explore, play and grow.
                         </p>
-                        <a href="#">
+                        <a href="#" class="learn-more" data-info="creche">
                             Learn More
                         </a>
                     </div>
@@ -191,7 +192,7 @@
                             A warm and caring start where little ones
                             explore, play and grow.
                         </p>
-                        <a href="#">
+                        <a href="#" class="learn-more" data-info="nursery">
                             Learn More
                         </a>
                     </div>
@@ -211,7 +212,7 @@
                             A warm and caring start where little ones
                             explore, play and grow.
                         </p>
-                        <a href="#">
+                        <a href="#" class="learn-more" data-info="primary">
                             Learn More
                         </a>
                     </div>
@@ -230,7 +231,7 @@
                             A warm and caring start where little ones
                             explore, play and grow.
                         </p>
-                        <a href="#">
+                        <a href="#" class="learn-more" data-info="secondary">
                             Learn More
                         </a>
                     </div>
@@ -304,7 +305,7 @@
                         </div>
                     </div>
                     <div class="about-btn">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-primary learn-more" data-info="about">
                             Learn More
                         </a>
                     </div>
@@ -529,7 +530,7 @@
                             supportive, caring and always encourage excellence.
                         </p>
                         <div class="testimonial-author">
-                            <img src="images/parent1.webp"
+                            <img src="./images/parent1.jpg"
                                 alt="Parent">
                             <div>
                                 <h4>Mrs. Sarah Johnson</h4>
@@ -556,7 +557,7 @@
                             BrightFuture Academy was the best decision.
                         </p>
                         <div class="testimonial-author">
-                            <img src="images/parent2.webp"
+                            <img src="./images/parent2.jpg"
                                 alt="Parent">
                             <div>
                                 <h4>Mr. David Wilson</h4>
@@ -583,7 +584,7 @@
                             BrightFuture Academy was the best decision.
                         </p>
                         <div class="testimonial-author">
-                            <img src="images/parent3.webp"
+                            <img src="./images/parent3.jpg"
                                 alt="Parent">
                             <div>
                                 <h4>Mrs. Emily Davis</h4>
@@ -597,9 +598,9 @@
                 </button>
             </div>
             <div class="testimonial-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot "></span>
+                <button class="dot active" aria-label="Show testimonial 1"></button>
+                <button class="dot" aria-label="Show testimonial 2"></button>
+                <button class="dot" aria-label="Show testimonial 3"></button>
             </div>
         </div>
     </section>
@@ -673,11 +674,11 @@
                     </div>
                 </a>
             </div>
-            <div class="gallery-btn">
+            <!-- <div class="gallery-btn">
                 <a href="#" class="btn btn-primary">
                     View Full Gallery
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -700,7 +701,7 @@
                         inspired to succeed.
                     </p>
                     <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">
+                        <a href="#" class="btn btn-primary open-application">
                             Enroll Now
                         </a>
                         <a href="#contact" class="btn btn-outline">
@@ -747,7 +748,8 @@
                         </div>
                         <div>
                             <h3>Phone Number</h3>
-                            <p>+234 800 123 4567</p>
+                            <a href="tel:+2348038151907">+234 803 815 1907</a><br>
+                            <a href="tel:+2349021040207">+234 902 104 0207</a>
                         </div>
                     </div>
                     <div class="contact-card">
@@ -771,9 +773,6 @@
                             <p>8:00 AM - 4:00 PM</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary">
-                        Contact Admissions
-                    </a>
                 </div>
                 <!-- Map -->
                 <div class="contact-map">
@@ -852,10 +851,10 @@
                 <div class="footer-links">
                     <h3>Programs</h3>
                     <ul>
-                        <li><a href="#">Creche</a></li>
-                        <li><a href="#">Nursery</a></li>
-                        <li><a href="#">Primary</a></li>
-                        <li><a href="#">Secondary</a></li>
+                        <li><a href="#" class="learn-more" data-info="creche">Creche</a></li>
+                        <li><a href="#" class="learn-more" data-info="nursery">Nursery</a></li>
+                        <li><a href="#" class="learn-more" data-info="primary">Primary</a></li>
+                        <li><a href="#" class="learn-more" data-info="secondary">Secondary</a></li>
                     </ul>
                 </div>
 
@@ -864,16 +863,35 @@
                     <h3>Contact Us</h3>
                     <ul>
                         <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Ikorodu, Lagos, Nigeria
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:patricktrust.dev@gmail.com">
+                                info@brightfutureacademy.com
+                            </a>
                         </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=Ikorodu%2C%20Lagos%2C%20Nigeria"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Ikorodu, Lagos, Nigeria
+                            </a>
+                        </li>
+
                         <li>
                             <i class="fa-solid fa-phone"></i>
-                            +234 800 123 4567
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            info@brightfutureacademy.com
+
+                            <span>
+                                <a href="tel:+2348038151907">
+                                    +234 803 815 1907
+                                </a>,
+                                <br>
+
+                                <a href="tel:+2349021040207">
+                                    +234 902 104 0207
+                                </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -896,9 +914,167 @@
     </footer>
 
 
-    <a href="#hero" class="back-to-top" aria-label="Back to top">
+    <!-- ===== APPLICATION MODAL ===== -->
+    <div class="application-modal" id="applicationModal" aria-hidden="true">
+        <div class="application-overlay"></div>
+        <div class="application-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="applicationTitle">
+            <button
+                type="button"
+                class="application-close"
+                aria-label="Close application form">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="application-header">
+                <span class="subtitle">
+                    Admissions Open 2026/2027
+                </span>
+                <h2 id="applicationTitle">
+                    Start Your Application
+                </h2>
+                <p>
+                    Complete the form below and our admissions team
+                    will get in touch with you.
+                </p>
+            </div>
+
+            <form class="application-form" id="applicationForm">
+                <div class="form-group">
+                    <label for="studentName">
+                        Student Name
+                    </label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter student's full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="parentName">
+                        Parent/Guardian Name
+                    </label>
+                    <input type="text" id="parentName" name="parentName" placeholder="Enter parent/guardian name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="program">
+                            Program
+                        </label>
+                        <select id="program" name="program" required>
+
+                            <option value="">
+                                Select a program
+                            </option>
+
+                            <option value="Creche">
+                                Creche
+                            </option>
+
+                            <option value="Nursery">
+                                Nursery
+                            </option>
+
+                            <option value="Primary">
+                                Primary
+                            </option>
+
+                            <option value="Secondary">
+                                Secondary
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">
+                            Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="+234..." required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        Email Address
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">
+                        Additional Information
+                    </label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us anything else we should know..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary application-submit">
+                    Submit Application
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ======== PROGRAM DETAILS MODAL ========= -->
+    <div class="program-modal" id="programModal" aria-hidden="true">
+        <div class="program-overlay"></div>
+        <div class="program-dialog" role="dialog" aria-modal="true" aria-labelledby="programModalTitle">
+
+            <button type="button" class="program-close" aria-label="Close program details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="program-modal-content">
+
+                <span class="subtitle" id="programModalSubtitle">
+                    Academic Program
+                </span>
+
+                <h2 id="programModalTitle">
+                    Creche
+                </h2>
+
+                <p id="programModalDescription">
+                    Program description goes here.
+                </p>
+
+                <div class="program-details">
+
+                    <h3>
+                        What Your Child Will Experience
+                    </h3>
+
+                    <ul id="programModalList">
+                        <!-- JavaScript will add the items -->
+                    </ul>
+                </div>
+
+                <a href="#" class="btn btn-primary" id="programApplyBtn">
+                    Start Application
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a
+        href="#hero"
+        class="back-to-top"
+        id="backToTop"
+        title="Back to top"
+        aria-label="Back to top"
+    >
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+
+
+    <!-- Java Script Files -->
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/program-modal.js"></script>
+    <script src="./js/testimonial.js"></script>
+    <script src="./js/back-to-top.js"></script>
+
+    <!-- EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Your EmailJS code -->
+    <script src="./js/enroll.js"></script>
+
 </body>
 </html>

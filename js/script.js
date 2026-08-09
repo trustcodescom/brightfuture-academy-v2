@@ -20,6 +20,10 @@ function updateMenuIcon() {
     icon.classList.toggle("fa-bars", !isOpen);
     icon.classList.toggle("fa-xmark", isOpen);
 
+    menuBtn.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+    );
 }
 
 function toggleMenu() {

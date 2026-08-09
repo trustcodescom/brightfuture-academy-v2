@@ -1037,6 +1037,8 @@ p{
 .testimonial-wrapper{
     width:100%;
     max-width:800px;
+
+    perspective: 1200px;
 }
 
 .testimonial{
@@ -1047,6 +1049,10 @@ p{
     box-shadow:var(--shadow);
     padding:2.5rem 1.5rem;
     text-align:center;
+
+    transform-style: preserve-3d;
+
+    backface-visibility: hidden;
 }
 .testimonial::before{
     content:"";
@@ -1063,9 +1069,13 @@ p{
     background:var(--color-secondary);
     border-radius:0 0 999px 999px;
 }
-.testimonial.active{
-    display:block;
-    animation:fade .5s ease;
+.testimonial.active {
+    display: block;
+
+    animation:
+        testimonialReveal
+        .7s
+        cubic-bezier(.22, 1, .36, 1);
 }
 
 .stars{
@@ -1498,10 +1508,6 @@ p{
 .contact-card a:hover{
     color:var(--color-primary);
 }
-.contact-info .btn{
-    width:100%;
-    margin-top:.5rem;
-}
 .contact-map{
     overflow:hidden;
 
@@ -1654,31 +1660,47 @@ p{
 }
 
 /*  BACK TO TOP  */
-.back-to-top{
-    position:fixed;
+.back-to-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
 
-    right:1.5rem;
-    bottom: 4rem;
+    width: 46px;
+    height: 46px;
 
-    width:55px;
-    height:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    border-radius: 50%;
 
-    border-radius:50%;
+    background: var(--color-secondary);
+    color: #fff;
 
-    background:var(--color-secondary);
-    color:var(--color-primary-dark);
+    text-decoration: none;
 
-    box-shadow:var(--shadow);
+    opacity: 0;
+    visibility: hidden;
 
-    z-index:999;
+    transform: translateY(15px);
 
-    transition:var(--transition);
+    transition:
+        opacity .3s ease,
+        visibility .3s ease,
+        transform .3s ease;
+
+    z-index: 9999;
+
+    cursor: pointer;
 }
 
-.back-to-top:hover{
-    transform:translateY(-5px);
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--color-secondary);
+    color: var(--color-primary);
 }

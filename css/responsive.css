@@ -239,11 +239,6 @@
         margin-inline:auto;
         max-width: 700px;
     }
-    .contact-info .btn{
-        width:auto;
-        min-width:520px;
-        align-self:center;
-    }
     .contact-map{
         min-height:420px;
     }
@@ -535,10 +530,6 @@
     .contact-map{
         min-height:100%;
     }
-    .contact-info .btn{
-        min-width:400px;
-        align-self:center;
-    }
 
     /* footer */
 
@@ -710,16 +701,9 @@
         font-size:1.6rem;
     }
 
-    .contact-info .btn{
-        min-width:450px;
-        align-self:center;
-    }
 
     /* footer */
-    /* .footer{
-        padding-top:6rem;
-    } */
-
+   
     .footer-grid{
         gap:5rem;
     }
