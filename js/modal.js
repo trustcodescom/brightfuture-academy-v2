@@ -1,8 +1,6 @@
 "use strict";
 
-/* ==========================================
-   APPLICATION MODAL
-========================================== */
+/* ======= APPLICATION MODAL ======== */
 
 const applicationModal =
     document.querySelector("#applicationModal");
@@ -17,9 +15,7 @@ const applicationTriggers =
     document.querySelectorAll(".open-application");
 
 
-/* ==========================================
-   OPEN MODAL
-========================================== */
+/* ====  OPEN MODAL ====== */
 
 function openApplicationModal(){
 
@@ -36,9 +32,7 @@ function openApplicationModal(){
 }
 
 
-/* ==========================================
-   CLOSE MODAL
-========================================== */
+/* ====== CLOSE MODAL ====== */
 
 function closeApplicationModal(){
 
@@ -53,9 +47,7 @@ function closeApplicationModal(){
 }
 
 
-/* ==========================================
-   EVENT LISTENERS
-========================================== */
+/* ====== EVENT LISTENERS ====== */
 
 applicationTriggers.forEach(button => {
 
@@ -82,9 +74,7 @@ applicationOverlay.addEventListener(
 );
 
 
-/* ==========================================
-   ESCAPE KEY
-========================================== */
+/* ======= ESCAPE KEY ========= */
 
 document.addEventListener("keydown", (event) => {
 

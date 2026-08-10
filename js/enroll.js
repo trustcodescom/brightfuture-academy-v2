@@ -1,25 +1,19 @@
 "use strict";
 
-/* ==========================================
-   EMAILJS INITIALIZATION
-========================================== */
+/* ======= EMAILJS INITIALIZATION ======= */
 
 emailjs.init({
     publicKey: "JGkVmeNZ-A1c0HrNm"
 });
 
 
-/* ==========================================
-   DOM ELEMENT
-========================================== */
+/* ======= DOM ELEMENT ======== */
 
 const applicationForm =
     document.querySelector("#applicationForm");
 
 
-/* ==========================================
-   FORM SUBMISSION
-========================================== */
+/* ======= FORM SUBMISSION ======== */
 
 applicationForm.addEventListener(
     "submit",

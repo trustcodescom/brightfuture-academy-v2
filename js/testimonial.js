@@ -1,8 +1,6 @@
 "use strict";
 
-/* ==========================================
-   TESTIMONIAL ELEMENTS
-========================================== */
+/* ======= TESTIMONIAL ELEMENTS ======= */
 
 const testimonials =
     document.querySelectorAll(".testimonial");
@@ -17,16 +15,12 @@ const dots =
     document.querySelectorAll(".testimonial-dots .dot");
 
 
-/* ==========================================
-   STATE
-========================================== */
+/* ======== STATE ====== */
 
 let currentTestimonial = 0;
 
 
-/* ==========================================
-   SHOW TESTIMONIAL
-========================================== */
+/* ===== SHOW TESTIMONIAL ======= */
 
 function showTestimonial(index) {
 
@@ -80,9 +74,7 @@ function showTestimonial(index) {
 }
 
 
-/* ==========================================
-   NEXT TESTIMONIAL
-========================================== */
+/* ======= NEXT TESTIMONIAL ======== */
 
 function nextTestimonial() {
 
@@ -93,9 +85,7 @@ function nextTestimonial() {
 }
 
 
-/* ==========================================
-   PREVIOUS TESTIMONIAL
-========================================== */
+/* ======= PREVIOUS TESTIMONIAL ======== */
 
 function previousTestimonial() {
 
@@ -106,9 +96,7 @@ function previousTestimonial() {
 }
 
 
-/* ==========================================
-   BUTTON EVENTS
-========================================== */
+/* ====== BUTTON EVENTS ====== */
 
 nextBtn.addEventListener("click", () => {
 
@@ -128,9 +116,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 
-/* ==========================================
-   DOT EVENTS
-========================================== */
+/* ===== DOT EVENTS ======= */
 
 dots.forEach((dot, index) => {
 
@@ -145,17 +131,13 @@ dots.forEach((dot, index) => {
 });
 
 
-/* ==========================================
-   INITIALIZATION
-========================================== */
+/* ====== INITIALIZATION ====== */
 
 showTestimonial(0);
 
 
 
-/* ==========================================
-   AUTOMATIC SLIDESHOW
-========================================== */
+/* ====== AUTOMATIC SLIDESHOW ===== */
 
 let testimonialInterval;
 
@@ -180,9 +162,7 @@ function restartSlideshow() {
 
 }
 
-/* ==========================================
-   INITIALIZATION
-========================================== */
+/* ======= INITIALIZATION ======= */
 
 showTestimonial(0);
 

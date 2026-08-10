@@ -1,8 +1,6 @@
 "use strict";
 
-/* ==========================================
-   PROGRAM DATA
-========================================== */
+/* ====== PROGRAM DATA ====== */
 
 const programs = {
 
@@ -93,9 +91,7 @@ const programs = {
 };
 
 
-/* ==========================================
-   DOM ELEMENTS
-========================================== */
+/* ======= DOM ELEMENTS  ====== */
 
 const programModal =
     document.querySelector("#programModal");
@@ -122,9 +118,7 @@ const programApplyBtn =
     document.querySelector("#programApplyBtn");
 
 
-/* ==========================================
-   OPEN PROGRAM MODAL
-========================================== */
+/* ======= OPEN PROGRAM MODAL ========== */
 
 function openProgramModal(programId) {
 
@@ -152,9 +146,7 @@ function openProgramModal(programId) {
     });
 
 
-    /* ==========================================
-       APPLICATION BUTTON
-    ========================================== */
+    /* ==== APPLICATION BUTTON = */
 
     if (programId === "about") {
 
@@ -167,9 +159,7 @@ function openProgramModal(programId) {
     }
 
 
-    /* ==========================================
-       OPEN MODAL
-    ========================================== */
+    /* ====== OPEN MODAL ===== */
 
     programModal.classList.add("active");
 
@@ -185,9 +175,7 @@ function openProgramModal(programId) {
 }
 
 
-/* ==========================================
-   CLOSE PROGRAM MODAL
-========================================== */
+/* ====== CLOSE PROGRAM MODAL ======= */
 
 function closeProgramModal() {
 
@@ -203,9 +191,7 @@ function closeProgramModal() {
 }
 
 
-/* ==========================================
-   LEARN MORE BUTTONS
-========================================== */
+/* ====== LEARN MORE BUTTONS ====== */
 
 programButtons.forEach(button => {
 
@@ -223,9 +209,7 @@ programButtons.forEach(button => {
 });
 
 
-/* ==========================================
-   CLOSE EVENTS
-========================================== */
+/* ====== CLOSE EVENTS ====== */
 
 programClose.addEventListener(
     "click",
@@ -253,9 +237,7 @@ programApplyBtn.addEventListener("click", (event) => {
 
 });
 
-//==========================================
-  //ESCAPE KEY
-//========================================== 
+//======= ESCAPE KEY ========== 
 
 document.addEventListener("keydown", event => {
 

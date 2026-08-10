@@ -1,16 +1,12 @@
 "use strict";
 
-/* ==========================================
-   DOM ELEMENTS
-========================================== */
+/* ======= DOM ELEMENTS ======= */
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 
-/* ==========================================
-   FUNCTIONS
-========================================== */
+/* ====== FUNCTIONS ======= */
 
 function updateMenuIcon() {
 
@@ -47,9 +43,7 @@ function closeMenu() {
 
 }
 
-/* ==========================================
-   EVENT LISTENERS
-========================================== */
+/* ======= EVENT LISTENERS ======= */
 
 // Toggle mobile menu
 menuBtn.addEventListener("click", toggleMenu);
@@ -86,8 +80,6 @@ document.addEventListener("keydown", (event) => {
 
 });
 
-/* ==========================================
-   INITIALIZATION
-========================================== */
+/* ======= INITIALIZATION ======= */
 
 updateMenuIcon();

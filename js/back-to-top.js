@@ -1,8 +1,6 @@
 "use strict";
 
-/* ==========================================
-   BACK TO TOP
-========================================== */
+/* ======= BACK TO TOP ======= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -10,18 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#backToTop");
 
 
-    /* ==========================================
-       CHECK ELEMENT
-    ========================================== */
+    /* ====== CHECK ELEMENT ======= */
 
     if (!backToTop) {
         return;
     }
 
 
-    /* ==========================================
-       SHOW / HIDE BUTTON
-    ========================================== */
+    /* ======= SHOW / HIDE BUTTON ======== */
 
     window.addEventListener("scroll", () => {
 
@@ -38,9 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* ==========================================
-       SCROLL TO TOP
-    ========================================== */
+    /* ======= SCROLL TO TOP ======== */
 
     backToTop.addEventListener("click", (event) => {
 
