@@ -175,7 +175,9 @@ p{
     margin-bottom:1rem;
 }
 
-
+body.modal-open .back-to-top {
+    display: none;
+}
 /* ==========================================
    BUTTONS
 ========================================== */
@@ -1663,7 +1665,7 @@ p{
 .back-to-top {
     position: fixed;
     right: 1.25rem;
-    bottom: 1.25rem;
+    bottom: 4rem;
 
     width: 46px;
     height: 46px;

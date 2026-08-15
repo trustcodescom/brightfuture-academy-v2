@@ -84,29 +84,30 @@
             <div class="hero-content">
                 <!-- Hero Text -->
                 <div class="hero-text">
-                    <span class="hero-badge">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        Admissions Open 2026/2027
-                    </span>
-                    <h2>
-                        Inspiring Young Minds,
-                        <span>Building <br class="desktop-break">Bright Futures.</span>
-                    </h2>
-                    <p>
-                        BrightFuture Academy provides quality education from
-                        Nursery to Secondary School in a safe, caring and
-                        inspiring environment where every child is encouraged
-                        to discover their full potential.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary open-application">
-                            Enroll Now
-                        </a>
-                        <a href="#programs" class="btn btn-outline">
-                            Explore Programs
-                        </a>
+                    <div data-aos="fade-right" data-aos-delay="100">
+                        <span class="hero-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Admissions Open 2026/2027
+                        </span>
+                        <h2>
+                            Inspiring Young Minds,
+                            <span>Building <br class="desktop-break">Bright Futures.</span>
+                        </h2>
+                        <p>
+                            BrightFuture Academy provides quality education from
+                            Nursery to Secondary School in a safe, caring and
+                            inspiring environment where every child is encouraged
+                            to discover their full potential.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn btn-primary open-application">
+                                Enroll Now
+                            </a>
+                            <a href="#programs" class="btn btn-outline">
+                                Explore Programs
+                            </a>
+                        </div>
                     </div>
-
                     <!-- Statistics -->
                     <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
                         <div class="stat">
@@ -906,9 +907,17 @@
                     </p>
                 </div>
                 <div class="footer-bottom-links">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Manage Cookies</a>
+                    <button class="legal-link" data-legal="terms">
+                        Terms of Service
+                    </button>
+
+                    <button class="legal-link" data-legal="privacy">
+                        Privacy Policy
+                    </button>
+
+                    <button class="legal-link" data-legal="cookies">
+                        Manage Cookies
+                    </button>
                 </div>
             </div>
         </div>
@@ -1052,6 +1061,16 @@
             </div>
         </div>
     </div>
+    <!-- ===== LEGAL MODAL ===== -->
+    <div class="legal-modal" id="legalModal" aria-hidden="true">
+        <div class="legal-overlay"></div>
+        <div  class="legal-modal-content" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+            <button type="button" class="legal-close" aria-label="Close" > &times; </button>
+            <h2 id="legalModalTitle"></h2>
+            <div class="legal-modal-body" id="legalModalBody" ></div>
+        </div>
+    </div>
+
 
     <a
         href="#hero"
@@ -1072,6 +1091,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/program-modal.js"></script>
+    <script src="./js/legal-modals.js"></script>
     <script src="./js/testimonial.js"></script>
     <script src="./js/back-to-top.js"></script>
 

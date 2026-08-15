@@ -169,6 +169,7 @@ function openProgramModal(programId) {
     );
 
     document.body.style.overflow = "hidden";
+    document.body.classList.add("modal-open");
 
     programClose.focus();
 
@@ -187,6 +188,7 @@ function closeProgramModal() {
     );
 
     document.body.style.overflow = "";
+    document.body.classList.remove("modal-open");
 
 }
 
